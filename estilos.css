@@ -1,0 +1,466 @@
+body {
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    height: 12.7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Josefin Sans', sans-serif;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 2px black 0;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+}
+
+.img1a {
+    position: absolute;
+    width: 10vw;
+    height: 3vh;
+    top: 2.7vh;
+    left: -3vh;
+    opacity: 0;
+}
+
+#ourcoffe {
+    position: relative;
+    right: 22vw;
+    @media screen and (max-width:750px){
+        right:13vw;
+    }
+}
+
+#ourcoffe .img1a:hover{
+    opacity: 1;
+}
+
+.img2a {
+    position: absolute;
+    width: 10vw;
+    height: 3vh;
+    top: 2.7vh;
+    left: -3vh;
+    opacity: 0;
+}
+
+#recetas {
+    position: relative;
+    right: 18vw;
+    @media screen and (max-width:750px){
+        right:8vw;
+    }
+}
+
+#recetas .img2a:hover{
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+#ourcoffe,#recetas {
+    text-decoration: none;
+    color: black;
+}
+
+.bi-search {
+    z-index: 1;
+    position: absolute;
+    top: 5vh;
+    right: 32vw;
+    color: black;
+    @media screen and (max-width:750px){
+        left:63.5vw;
+        width:12px;
+    }
+}
+
+.bi-search:hover {
+    transform: scale(1.05);
+}
+
+#buscar {
+    position: relative;
+    width: 13vw;
+    height: 7vh;
+    left: 52vh;
+    font-size: 1.4vw;
+    border-style: none;
+    border-radius: 10px;
+    background-color: #F2F4F4;
+    padding: 0 30px;
+    font-family: 'Ubuntu', sans-serif;
+    @media screen and (max-width:750px){
+        left:17.5vw;
+        font-size:2vw;
+        padding:0 17px;
+    }
+}
+
+#buscar::placeholder {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    position: absolute;
+    top: 1.8vh;
+    right: 1vw;
+    font-size: 1.5vw;
+}
+
+@media (max-width:750px) {
+    #buscar::placeholder {
+        font-size: 2.5vw;
+    }
+}
+
+.bi {
+    color: black;
+    width: 22px;
+    padding: 0 25px;
+    left: 27vw;
+    position: relative;
+    @media screen and (max-width:750px){
+        left:18vw;
+        padding:0 10px;
+    }
+}
+
+.content {
+    position: absolute;
+    top: 12.7vh;
+    width: 100%;
+    height: 105vh;
+}
+
+.content img {
+    z-index: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    @media screen and (max-width:750px){
+        height:70%;
+    }
+}
+
+
+.fondon {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    @media screen and (max-width:750px){
+        height:70%;
+    }
+}
+.texto1 {
+    z-index: 1;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 60vh;
+    top: 25vh;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:750px){
+        top:20vh;
+    }
+}
+
+.texto1 p {
+    font-size: 1.3vw;
+    padding: 0;
+    margin: 0;
+}
+
+.texto1 h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 5vw;
+}
+
+.texto1 sup {
+    font-size: 2.5vw;
+    position: absolute;
+    top: 2vh;
+    right: 25vw;
+}
+
+.texto1 h6 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.4vw;
+}
+
+.texto1 a {
+    text-decoration: none;
+}
+
+.texto1 a h2 {
+    font-size: 1.5vw;
+    color: white;
+    padding: 15px 20px;
+    border: 2px solid white;
+    width: 10vw;
+    margin: 0 42.6vw;
+    position: absolute;
+    top: 28vh;
+    border-bottom-right-radius:25px ;
+    @media screen and (max-width:750px){
+        top:15vh;
+        right:-2.5vw;
+    }
+}
+
+.wave {
+    font-size: 1.5vw;
+    color: black;
+    padding: 15px 20px;
+    border: 2px solid white;
+    width: 10vw;
+    margin: 0 42.6vw;
+    position: absolute;
+    top: 28vh;
+    border-bottom-right-radius:25px;
+    opacity: 1;
+    background: white;
+    animation: shift 3s ease-in-out infinite;
+    @media screen and (max-width:750px){
+        top:15vh;
+        right:-2.5vw;
+    }
+}
+
+@keyframes shift {
+    0%, 100% {
+        clip-path: polygon(0% 47%, 10% 48%, 33% 54%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+    50% {
+        clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+
+}
+
+.caf {
+    position: absolute;
+    width: 42vw;
+    height: 72vh;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 45px;
+    @media screen and (max-width:750px){
+        width:42vw;
+        height: 60vh;
+        border-bottom-right-radius: 120px;
+        border-top-left-radius: 25px;
+    }
+}
+
+.caf .opaco {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+}
+
+.historys {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    width: 42vw;
+    height: 72vh;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:750px){
+        width:42vw;
+        height: 60vh;
+        border-bottom-right-radius: 120px;
+        border-top-left-radius: 25px;
+    }
+}
+
+.historys h1 {
+    position: absolute;
+    top: 14vh;
+    font-size: 3.5vw;
+}
+
+.historys .bi-arrow-right {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+}
+
+.historys .bi-arrow-right:hover {
+    color: red;
+    transition-duration: 0.7s;
+    transform: scale(1.1);
+}
+
+.historys p {
+    position: absolute;
+    margin: 0 3vw;
+    font-size: 1.5vw;
+    text-align: center;
+}
+
+.historys #logo{
+    position: absolute;
+    width: 3.5vw;
+    bottom: 25vh;
+}
+
+.ourcafes {
+    top: 125vh;
+    left: 6vw;
+    overflow: hidden;
+    @media screen and (max-width:750px){
+        top: 95vh;
+        left:3vw;
+    }
+}
+
+.ourcafes img {
+    width: 100%;
+    height: 100%;
+}
+
+.experience {
+    top: 125vh;
+    right: 6vw;
+    overflow: hidden;
+    @media screen and (max-width:750px){
+        top: 95vh;
+        right:3vw;
+    }
+}
+
+.experience img{
+    width: 100%;
+    height: 100%;
+}
+
+.history {
+    top: 203vh;
+    overflow: hidden;
+    @media screen and (max-width:750px){
+        top: 160vh;
+    }
+}
+
+.history img{
+    width: 100%;
+    height: 100%;
+}
+
+.main1 {
+    position: absolute;
+    top: 290vh;
+    width: 100%;
+    height: 60vh;
+    background-color: rgb(32, 30, 30);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    border-bottom: 3px solid white;
+    @media screen and (max-width:750px){
+        top:235vh;
+    }
+}
+
+.main1 h1 {
+    position: absolute;
+    top: 10vh;
+}
+
+.main1 p {
+    position: absolute;
+    top: 24vh;
+    margin:0 31vw;
+}
+
+.main1 a {
+    color: white;
+}
+
+.main1 svg {
+    position: relative;
+    top: 18vh;
+    padding: 0 20px;
+}
+
+.footer {
+    position: absolute;
+    top:350.5vh;
+    width: 100%;
+    height: 30vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    @media screen and (max-width:750px){
+        top:295.5vh;
+        height:20vh;
+    }
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0 20px;
+    top:4vh;
+    right: 2vw;
+    @media screen and (max-width:750px){
+        font-size:2vw;
+        top:4vh;
+        left:0vw;
+    }
+}
+
+.footer a:hover {
+    text-decoration: underline;
+    transition-duration: 0.5s;
+}
+
+.footer p {
+    position: absolute;
+    top: 5vh;
+    left: 6.2vw;
+    font-size: 1.3vw;
+    @media screen and (max-width:750px){
+        font-size:2vw;
+        top:2vh;
+        left:2vw;
+    }
+}
+
+.footer svg {
+    position: absolute;
+    right: 14.5vw;
+    bottom: 9.5vh;
+    @media screen and (max-width:750px){
+        
+        top:2vh;
+        right:2vw;
+    }
+}
